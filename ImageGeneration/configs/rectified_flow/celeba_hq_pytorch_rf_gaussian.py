@@ -109,7 +109,7 @@ def get_config():
   data.dataset = 'CelebAHQ'
   data.centered = True
   data.random_flip = True
-  config.data.tfrecords_path ="/big_storage/baonn/celebahq256-tfr/train"
+  config.data.tfrecords_path ="celebahq256-tfr/train"
   
   # model
   config.model = model = ml_collections.ConfigDict()

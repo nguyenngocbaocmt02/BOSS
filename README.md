@@ -14,7 +14,7 @@
 
   
 
-# BELLMAN OPTIMAL STEP-SIZE STRAIGHTENING OF FLOW-MATCHING MODELS
+# Bellman Optimal Step-Size Straightening Of Flow-Matching Models
 
 <div  align="center">
 
@@ -22,7 +22,7 @@
 <a  href="https://tbng.github.io/"  target="_blank">Binh&nbsp;Nguyen</a> &emsp; <b>&middot;</b> &emsp;
 <a  href="https://www.vietanhnguyen.net/"  target="_blank">Viet Anh&nbsp;Nguyen</a>
 <br>
-<a  href="https://openreview.net/pdf?id=Iyve2ycvGZ">[Paper]</a> &emsp;&emsp;
+<a  href="https://arxiv.org/abs/2312.16414">[Paper]</a> &emsp;&emsp;
 
 <a  href="https://docs.google.com/presentation/d/1ZDZyq14_EOBJATRfd27KY3WEuYxC9P5o/edit?usp=sharing&ouid=117701086559509895224&rtpof=true&sd=true">[Slides]</a> &emsp;&emsp;
 
@@ -36,21 +36,23 @@
 
 </div>
 
-  
-  
 
 This paper introduces Bellman Optimal Step-size Straightening (BOSS) technique for distilling flow-matching generative models: it aims specifically for a few-step efficient image sampling while adhering to a computational budget constraint. First, this technique involves a dynamic programming algorithm that optimizes the step sizes of the pretrained network. Then, it refines the velocity network to match the optimal step sizes, aiming to straighten the generation paths.
 
-  
-  
 
-Details regarding our methodology and the corresponding experimental results are available in [our following paper](https://arxiv.org/abs/2211.16152):
+Details regarding our methodology and the corresponding experimental results are available in [our following paper](https://arxiv.org/abs/2312.16414):
 
-  
 
 **Please CITE** our paper whenever utilizing this repository to generate published results or incorporating it into other software.
 
-  
+```bash
+@article{nguyen2023bellman,
+  title={Bellman Optimal Step-size Straightening of Flow-Matching Models},
+  author={Nguyen, Bao and Nguyen, Binh and Nguyen, Viet Anh},
+  journal={arXiv preprint arXiv:2312.16414},
+  year={2023}
+}
+```
 
 ## Installation ##
 
@@ -137,39 +139,41 @@ We use pretrained models on five datasets, including CIFAR10, AFHQ-CAT 256, LSUN
 
 ### FID ###
 
-Check out [On Aliased Resizing and Surprising Subtleties in GAN Evaluation](https://github.com/GaParmar/clean-fid/tree/main) for generating the stats files and calculating FID score.
+Check out the clean-fid paper [On Aliased Resizing and Surprising Subtleties in GAN Evaluation](https://github.com/GaParmar/clean-fid/tree/main) for generating the stats files and calculating FID score.
 
 For CIFAR10, they will be automatically downloaded in the first time execution.
 
 For CelebA HQ (256) and LSUN, please check out [here](https://github.com/NVlabs/NVAE#set-up-file-paths-and-data) for dataset preparation.
 
-For AFHQ-CAT, please check out [here] (https://github.com/clovaai/stargan-v2-tensorflow/tree/master).
+For AFHQ-CAT, please check out [here](https://github.com/clovaai/stargan-v2-tensorflow/tree/master).
 
 We also provide stats files for these datasets at [here](https://drive.google.com/drive/folders/1rNF6jJ5T1UNpLTkuEqwIrFdq9vyw5Cbj). Store these stats files to the folder stats which is in the cleanfid installed folder (`~/anaconda3/envs/boss/lib/python3.9/site-packages/cleanfid/stats`).
 
 ### Run pretrained models with Bellmanstepsizes ###
 
-Check out the script(`./scripts/evaluate.sh`). Use the method bellman_uniform for DISC_METHODS. 
+Check out the script(`./ImageGeneration/scripts/evaluate.sh`). Use the method bellman_uniform for DISC_METHODS. 
 
 ### Generate data for finetuning ###
 
-Check out the script(`./scripts/gen_data.sh`). 
+Check out the script(`./ImageGeneration/scripts/gen_data.sh`). 
 
 ### Finetuning ###
 
-Check out scripts(`./scripts/boss.sh and ./scripts/reflow.sh`). 
+Check out scripts(`./ImageGeneration/scripts/boss.sh and ./ImageGeneration/scripts/reflow.sh`). 
 
 ### Evaluate after finetuning ###
 
-Check out scripts(`./scripts/evaluate_after_finetuning.sh`).
+Check out scripts(`./ImageGeneration/scripts/evaluate_after_finetuning.sh`).
 
 ### Other options ###
 
-This repository is extended to fintune models from [Elucidating the Design Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm) and use LORA(Low rank adaptation) for finetuning. Check other folder in scripts for more details.
+This repository is extended to fintune EDM models from [Elucidating the Design
+Space of Diffusion-Based Generative Models
+(EDM)](https://github.com/NVlabs/edm) and use LORA (Low rank adaptation) for finetuning. Check other folder in scripts for more details.
 
 ## Acknowledgments ##
 
-Thanks to Xingchao Liu et al, Yang Song et al for releasing their official implementation of the [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://github.com/gnobitab/RectifiedFlow), [Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch), [Elucidating the Design Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm) papers and [MinLora](https://github.com/cccntu/minlora) repository.
+Thanks to Xingchao Liu et al., Yang Song et al., and Tero Karras et al. for releasing their official implementation of the [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://github.com/gnobitab/RectifiedFlow), [Score-Based Generative Modeling through Stochastic Differential Equations](https://github.com/yang-song/score_sde_pytorch), [Elucidating the Design Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm) papers and [MinLora](https://github.com/cccntu/minlora) repository.
 
 ## Contacts ##
 
