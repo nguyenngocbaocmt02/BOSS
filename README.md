@@ -14,7 +14,7 @@
 
   
 
-# Bellman Optimal Step-Size Straightening Of Flow-Matching Models
+# Bellman Optimal StepSize Straightening Of Flow-Matching Models
 
 <div  align="center">
 
@@ -43,7 +43,7 @@ This paper introduces Bellman Optimal Step-size Straightening (BOSS) technique f
 Details regarding our methodology and the corresponding experimental results are available in [our following paper](https://arxiv.org/abs/2312.16414):
 
 
-**Please CITE** our paper whenever utilizing this repository to generate published results or incorporating it into other software.
+**Please CITE** our paper whenever utilizing this repository to generate published results or incorporate it into other software.
 
 ```bash
 @article{nguyen2023bellman,
@@ -75,7 +75,7 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
 ## Dataset and pretrained models preparation ##
 
-We use pretrained models on five datasets, including CIFAR10, AFHQ-CAT 256, LSUN Church Outdoor 256, LSUN BEDROOM and CelebA HQ (256). Our method is a data-free method so downloading datasets are unnecessary. The pretrained models are found in [Rectified Flow](https://github.com/gnobitab/RectifiedFlow). Download 5 models from their website and store them in the `./logs` folder as follows:
+We use pretrained models on five datasets, including CIFAR-10 (32), AFHQ-Cat (256), LSUN Church (256), LSUN Bedroom (256), and CelebA-HQ (256). Our method is a data-free method so downloading datasets is unnecessary. The pretrained models are found in [Rectified Flow](https://github.com/gnobitab/RectifiedFlow). Download 5 models from their website and store them in the `./logs` folder as follows:
 
 <ul>
   <li>logs
@@ -135,11 +135,11 @@ We use pretrained models on five datasets, including CIFAR10, AFHQ-CAT 256, LSUN
 
 ## How to run ##
 
-**GPU allocation**: Our work is experimented on NVIDIA A5000 GPUs. For finetuning, we use one GPU for CIFAR10, and three GPUs for 256x256 resolution datasets.  
+**GPU allocation**: Our work is experimented on NVIDIA A5000 GPUs. For finetuning, we use one GPU for CIFAR-10, and three GPUs for 256x256 resolution datasets.  
 
 ### FID ###
 
-Check out the clean-fid paper [On Aliased Resizing and Surprising Subtleties in GAN Evaluation](https://github.com/GaParmar/clean-fid/tree/main) for generating the stats files and calculating FID score.
+Check out the clean-fid paper [On Aliased Resizing and Surprising Subtleties in GAN Evaluation](https://github.com/GaParmar/clean-fid/tree/main) for generating the stats files and calculating the FID score.
 
 For CIFAR10, they will be automatically downloaded in the first time execution.
 
@@ -147,7 +147,7 @@ For CelebA HQ (256) and LSUN, please check out [here](https://github.com/NVlabs/
 
 For AFHQ-CAT, please check out [here](https://github.com/clovaai/stargan-v2-tensorflow/tree/master).
 
-We also provide stats files for these datasets at [here](https://drive.google.com/drive/folders/1rNF6jJ5T1UNpLTkuEqwIrFdq9vyw5Cbj). Store these stats files to the folder stats which is in the cleanfid installed folder (`~/anaconda3/envs/boss/lib/python3.9/site-packages/cleanfid/stats`).
+We also provide stats files for these datasets at [here](https://drive.google.com/drive/folders/1rNF6jJ5T1UNpLTkuEqwIrFdq9vyw5Cbj). Store these stats files in the folder stats which is in the cleanfid installed folder (`~/anaconda3/envs/boss/lib/python3.9/site-packages/cleanfid/stats`).
 
 ### Run pretrained models with Bellmanstepsizes ###
 
@@ -167,9 +167,9 @@ Check out scripts(`./ImageGeneration/scripts/evaluate_after_finetuning.sh`).
 
 ### Other options ###
 
-This repository is extended to fintune EDM models from [Elucidating the Design
+This repository is extended to finetune EDM models from [Elucidating the Design
 Space of Diffusion-Based Generative Models
-(EDM)](https://github.com/NVlabs/edm) and use LORA (Low rank adaptation) for finetuning. Check other folder in scripts for more details.
+(EDM)](https://github.com/NVlabs/edm) and use LORA (Low-rank adaptation) for finetuning. Check other folders in scripts for more details.
 
 ## Acknowledgments ##
 
