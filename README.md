@@ -159,17 +159,20 @@ Check out the script(`./ImageGeneration/scripts/gen_data.sh`).
 
 ### Finetuning ###
 
-Check out scripts(`./ImageGeneration/scripts/boss.sh and ./ImageGeneration/scripts/reflow.sh`). 
+Check out the script(`./ImageGeneration/scripts/boss.sh and ./ImageGeneration/scripts/reflow.sh`). 
 
 ### Evaluate after finetuning ###
 
-Check out scripts(`./ImageGeneration/scripts/evaluate_after_finetuning.sh`).
+Check out the script(`./ImageGeneration/scripts/evaluate_after_finetuning.sh`).
+
+### Finetuning (Using LoRA) ###
+
+Check out the script(`./ImageGeneration/scripts/test_lora/boss_lora.sh`) and check out the script (`./ImageGeneration/scripts/test_lora/evaluate_after_finetuning_lora.sh`) for evaluating fine-tuned models incorporating LoRA. 
 
 ### Other options ###
 
 This repository is extended to finetune EDM models from [Elucidating the Design
-Space of Diffusion-Based Generative Models
-(EDM)](https://github.com/NVlabs/edm) and use LORA (Low-rank adaptation) for finetuning. Check other folders in scripts for more details.
+Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm). Check other folders in scripts for more details.
 
 ## Acknowledgments ##
 
