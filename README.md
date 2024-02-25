@@ -12,7 +12,7 @@
 
 # 🔥 News
 
-- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the [Section  Finetuning (Using LoRA)](#finetuning-(using-lora)). 
+- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the Section[Finetuning (Using LoRA)](#finetuning-(using-lora)). 
 
 # Bellman Optimal StepSize Straightening Of Flow-Matching Models
 
