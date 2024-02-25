@@ -12,7 +12,7 @@
 
 # 🔥 News
 
-- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the Section[Finetuning (Using LoRA)](#finetuning-(using-lora)). 
+- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the Section [Finetuning using LoRA](#finetuning-using-lora). 
 
 # Bellman Optimal StepSize Straightening Of Flow-Matching Models
 
@@ -165,14 +165,13 @@ Check out the script(`./ImageGeneration/scripts/boss.sh and ./ImageGeneration/sc
 
 Check out the script(`./ImageGeneration/scripts/evaluate_after_finetuning.sh`).
 
-### Finetuning (Using LoRA) ###
+### Finetuning using LoRA ###
 
 Check out the script(`./ImageGeneration/scripts/test_lora/boss_lora.sh`) and check out the script (`./ImageGeneration/scripts/test_lora/evaluate_after_finetuning_lora.sh`) for evaluating fine-tuned models incorporating LoRA. 
 
 ### Other options ###
 
-This repository is extended to finetune EDM models from [Elucidating the Design
-Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm). Check other folders in scripts for more details.
+This repository is extended to finetune EDM models from [Elucidating the Design Space of Diffusion-Based Generative Models (EDM)](https://github.com/NVlabs/edm). Check other folders in scripts for more details.
 
 ## Acknowledgments ##
 
