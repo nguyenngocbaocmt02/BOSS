@@ -12,7 +12,7 @@
 
 # 🔥 News
 
-- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the [Section  Finetuning (Using LoRA)](#section-finetuning-(Using-LoRA)). 
+- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the [Section  Finetuning (Using LoRA)](#finetuning-(using-lora)). 
 
 # Bellman Optimal StepSize Straightening Of Flow-Matching Models
 
@@ -149,7 +149,7 @@ For AFHQ-CAT, please check out [here](https://github.com/clovaai/stargan-v2-tens
 
 We also provide stats files for these datasets at [here](https://drive.google.com/drive/folders/1rNF6jJ5T1UNpLTkuEqwIrFdq9vyw5Cbj). Store these stats files in the folder stats which is in the cleanfid installed folder (`~/anaconda3/envs/boss/lib/python3.9/site-packages/cleanfid/stats`).
 
-### Run pretrained models with Bellmanstepsizes ###
+### Run pretrained models with Bellman stepsizes ###
 
 Check out the script(`./ImageGeneration/scripts/evaluate.sh`). Use the method bellman_uniform for DISC_METHODS. 
 
