@@ -2,17 +2,17 @@
 
 1. [Installation](#installation)
 
-2. [Dataset preparation](#dataset-preparation)
+2. [Dataset and pretrained models preparation](#dataset-and-pretrained-models-preparation)
 
 3. [How to run](#how-to-run)
 
-4. [Evaluation](#evaluation)
+4. [Acknowledgments](#acknowledgments)
 
-5. [Acknowledgments](#acknowledgments)
+5. [Contacts](#contacts)
 
-6. [Contacts](#contacts)
+# 🔥 News
 
-  
+- *January 2024*: The straightening with Low-rank Adaptation (LoRA) is available. Check out the [Section  Finetuning (Using LoRA)](#section-finetuning-(Using-LoRA)). 
 
 # Bellman Optimal StepSize Straightening Of Flow-Matching Models
 
